@@ -88,13 +88,6 @@
 	display: none;
 }
 
-/*
-.sub-menu-hover li:hover{
-	background-color: #FFB82F;
-	border-radius: 10px;
-	padding: 2px;
-}
-*/
 
 .sub-menu-hover-li{
 	background-color: #FFB82F;
@@ -106,10 +99,9 @@
 	display: inline-block;
 	margin-right: 2px;
 	margin-left: 2px;
-
 	/*	english*/
-	/*	transform: rotate(180deg);*/
-	/*	english*/
+	transform: rotate(180deg);
+	
 }
 
 
@@ -222,6 +214,8 @@ transform: rotate(180deg);
 	display: inline-block;
 	margin-right: 10px;
 	margin-left: 10px;
+	/*	english*/
+	transform: rotate(180deg);
 }
 
 
@@ -324,7 +318,7 @@ transform: rotate(180deg);
 	background-color: #FFD776;
 	width: 100%;
 	border-radius: 0 0 12px 12px;
-	padding: 3px 15px 2px 3px;
+	padding: 3px 15px 2px 15px;
 }
 
 
