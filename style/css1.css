@@ -776,6 +776,7 @@ footer{
 .font-size32{font-size: 32px;}
 .font-size40{font-size: 40px;}
 
+.transform_img{transform: scaleX(-1);}
 
 /*---scrollbar style---*/
 ::-webkit-scrollbar {width: 6px;}

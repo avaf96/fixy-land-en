@@ -28,34 +28,30 @@ for(let i=0; i< stars.length; i++){
 		
 		switch(i) {
 			case 4:
-				for(let k=i; k<stars.length; k++){
+				for(let k=0; k<(i+1); k++){
 					$(stars[k]).attr("src", "image/yellow-star.png");
 				}
 				
 				break;
 			case 3:
-				for(let k=i; k<stars.length; k++){
+				for(let k=0; k<(i+1); k++){
 					$(stars[k]).attr("src", "image/yellow-star.png");
 				}
-//				$(forms[i]).removeClass("d-none");
 				break;
 			case 2:
-				for(let k=i; k<stars.length; k++){
+				for(let k=0; k<(i+1); k++){
 					$(stars[k]).attr("src", "image/yellow-star.png");
 				}
-//				$(forms[i]).removeClass("d-none");
 				break;
 			case 1:
-				for(let k=i; k<stars.length; k++){
+				for(let k=0; k<(i+1); k++){
 					$(stars[k]).attr("src", "image/yellow-star.png");
 				}
-//				$(forms[i]).removeClass("d-none");
 				break;
 			case 0:
-				for(let k=i; k<stars.length; k++){
+				for(let k=0; k<(i+1); k++){
 					$(stars[k]).attr("src", "image/yellow-star.png");
 				}
-//				$(forms[i]).removeClass("d-none");
 				break;
 		}
 	})
