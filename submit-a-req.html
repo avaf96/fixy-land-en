@@ -844,19 +844,30 @@
 							</div>
 							
 							<!--picture upload-->
-							<div class="mb-4">
-								<label for="upload-problem-pic" class="darkgreen rounded-3 p-4 text-white text-center fw-bold">
-									<i class="fa-solid fa-plus font-size40"></i>
-									<br>
+							<div class="mb-4 d-flex justify-content-center gap-1">
+								<div>
+									<label for="upload-problem-pic" class="darkgreen rounded-3 p-4 text-white text-center fw-bold">
+										<i class="fa-solid fa-plus font-size40"></i>
+										<br>
 										upload here
-								</label>
-								<input type="file" id="upload-problem-pic" class="d-none">
+									</label>
+									<input type="file" id="upload-problem-pic" class="d-none" onchange="loadFile(event)">
+								</div>
+								
+								<div class="d-flex flex-column">
+									<p id="remove_img" class="btn m-0 d-none" onClick="remove_picture()"> 
+										<i class="fa-solid fa-xmark"></i>
+									</p>
+									<img id="output_img" alt="problem pic" class="d-none border" width="70px" height="70px">
+									
+								</div>
+								
 							</div>
 
 							<!--problem description-->
-							<div class="mb-3 text-start">
+							<div class="mb-3  text-start">
 								<label for="problem-description" class="form-label fw-bold">problem description: </label>
-								<textarea id="problem-description" class="form-control border-dark" rows="10" placeholder=" ... "></textarea>
+								<textarea id="problem-description" class="form-control border-dark" rows="10" placeholder="..."></textarea>
 							</div>
 							
 						</div>
@@ -888,7 +899,7 @@
 											<option> 9am to 12pm </option>
 											<option> 12pm to 16pm </option>
 											<option> 16pm to 20pm </option>
-											<option> 20pm to 22pm </option>	
+											<option> 20pm to 22pm </option>		
 										</select>
 									</div>
 									
@@ -898,7 +909,7 @@
 							</div>
 						</div>
 						
-						
+		
 						<!--نمایش اطلاعات کاربر برای متخصص-->
 						<div class="mt-3 pb-2 text-start">
 							<p class="m-0 d-inline-block pe-4 fw-bold"> 
@@ -974,7 +985,6 @@
 					</form>
 					
 
-	
 				</div>
 				
 				
