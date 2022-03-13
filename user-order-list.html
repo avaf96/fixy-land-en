@@ -767,14 +767,38 @@
 
 											<div class="d-flex justify-content-between flex-column flex-md-row mb-md-4 ps-2 pe-2">
 												<div>
-													<label class="form-check-label pe-2" for="confirm">
-														agree
-													</label>
 													<input type="checkbox" required="required" class="form-check-input" id="confirm">
+													<label class="form-check-label ps-1" for="confirm">
+														Agree
+													</label>
 												</div>
 												
-												<div class="mt-3 mt-md-0">
-													<p id="disapprove" class="darkYellow-text"> mablagh mored ghabool nist </p>
+												<div class="mt-3 mb-3 mt-md-0 mb-md-0">
+													<button type="button" class="btn darkYellow-text p-0" data-bs-toggle="modal" data-bs-target="#disapprove_modal" data-bs-whatever="@mdo">mablagh mored ghabool nist</button>
+													
+													<!--modal start-->
+													<div class="modal fade" id="disapprove_modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-body">
+																	<form>
+																		<div class="mb-3">
+																			<label for="message-text" class="col-form-label"> 
+																			chera ghabool nadarid?
+																			</label>
+																			<textarea class="form-control" id="message-text"></textarea>
+																		</div>
+																	</form>
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+																	<button type="button" class="btn darkYellow">Send message</button>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!--modal end-->
+													
 												</div>
 											</div>
 
@@ -792,7 +816,10 @@
 											</form>
 
 											
-											<button type="submit" class="w-100 border-0 rounded-3 darkYellow p-2">pardakht</button>
+											<button class="pay_btn btn w-100 border border-2 p-2">
+												pardakht 
+											</button>
+											<a href="#" class="pay_btn btn text-decoration-none text-black w-100 border-0 darkYellow p-2 d-none">pardakht</a>
 											
 
 											
