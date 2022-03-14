@@ -717,22 +717,94 @@
 								  <!--آدرس-->
 								  <div class="row dastrasi-sari-grid d-flex gap-1 gy-1 m-0 justify-content-evenly d-none ">
 									<form class="col-12 col-md-6">
-									  <div class="mb-3">
-										<label for="state-register-specialist" class="form-label">province</label>
-										<select class="form-control" id="state-register-specialist">
-										  <option value="fars">fars</option>
-										  <option value="tehran">tehran</option>
-										  <option value="esfahan">esfahan</option>
+										
+									 <!--استان محل سکونت-->
+								  <div class="mb-3">
+									<label for="state-register-specialist" class="form-label"> mahale sokoonat(ostan)</label>
+									<select class="form-select form-bg-color" id="state-register-specialist">
+									  <option value="0" selected>fars</option>
+									  <option value="1">tehran</option>
+									  <option value="2">esfahan</option>
+									</select>
+								  </div>
+
+									<!--شهرهای مرتبط به هر استان   --  start -->
+									<!--فارس-->
+									<div class="cities mb-3">
+										<label for="city-register-specialist-fars" class="form-label">mahale sokoonat(shahr) </label> 
+										<select class="form-select form-bg-color" id="city-register-specialist-fars">
+											<option value="shiraz">shiraz</option>
+											<option value="tehran">fasa</option>
+											<option value="esfahan">eghlid</option>
 										</select>
-									  </div>
-									  <div class="mb-3">
-										<label for="city-register-specialist" class="form-label">city</label>
-										<select class="form-control" id="city-register-specialist">
-										  <option value="shiraz">shiraz</option>
-										  <option value="tehran">tehran</option>
-										  <option value="esfahan">esfahan</option>
+									</div>
+
+									<!--تهران-->
+									<div class="cities mb-3 d-none">
+										<label for="city-register-specialist-tehran" class="form-label">mahale sokoonat(shahr) </label>
+										<select class="form-select form-bg-color" id="city-register-specialist-tehran">
+											<option value="shiraz">tehran</option>
+											<option value="tehran">rey</option>
+											<option value="esfahan">golpayegan</option>
 										</select>
-									  </div>
+									</div>
+
+									<!--اصفهان-->
+									<div class="cities mb-3 d-none">
+										<label for="city-register-specialis-esfahan" class="form-label">mahale sokoonat(shahr) </label>
+										<select class="form-select form-bg-color" id="city-register-specialist-esfahan">
+											<option value="shiraz">esfahan</option>
+											<option value="tehran">esfahan</option>
+											<option value="esfahan">esfahan</option>
+										</select>
+									</div>
+									<!--شهرهای مرتبط به هر استان   --  end -->
+										
+																				
+										
+									<!--استان محل خدمت-->
+								  <div class="mb-3">
+									<label for="work_state-register-specialist" class="form-label"> mahale khedmat(ostan) </label>
+									<select class="form-select form-bg-color" id="work_state-register-specialist">
+									  <option value="0" selected>fars</option>
+									  <option value="1">tehran</option>
+									  <option value="2">esfahan</option>
+									</select>
+								  </div>
+
+									<!--شهرهای مرتبط به هر استان   --  start -->
+									<!--فارس-->
+									<div class="work_cities mb-3">
+										<label for="work_city-register-specialist-fars" class="form-label"> mahale khedmat(shahr) </label> 
+										<select class="form-select form-bg-color" id="work_city-register-specialist-fars">
+											<option value="shiraz">shiraz</option>
+											<option value="tehran">fasa</option>
+											<option value="esfahan">eghlid</option>
+										</select>
+									</div>
+
+									<!--تهران-->
+									<div class="work_cities mb-3 d-none">
+										<label for="work_city-register-specialist-tehran" class="form-label">mahale khedmat(shahr)</label>
+										<select class="form-select form-bg-color" id="work_city-register-specialist-tehran">
+											<option value="shiraz">tehran</option>
+											<option value="tehran">rey</option>
+											<option value="esfahan">golpayegan</option>
+										</select>
+									</div>
+
+									<!--اصفهان-->
+									<div class="work_cities mb-3 d-none">
+										<label for="work_city-register-specialis-esfahan" class="form-label"> mahale khedmat(shahr)</label>
+										<select class="form-select form-bg-color" id="work_city-register-specialist-esfahan">
+											<option value="shiraz">esfahan</option>
+											<option value="tehran">esfahan</option>
+											<option value="esfahan">esfahan</option>
+										</select>
+									</div>
+									<!--شهرهای مرتبط به هر استان   --  end -->
+										
+					
 									  <div class="mb-3">
 										<label for="address-register-specialist" class="form-label">addrs</label>
 										<textarea class="form-control form-bg-color" id="address-register-specialist" placeholder="addr"></textarea>
@@ -1194,6 +1266,7 @@
 
 						  	  </div>
 						</section>
+						
 					</div>
 				</div>
 
