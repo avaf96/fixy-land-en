@@ -29,6 +29,7 @@
 	padding-bottom: 0;
 }
 
+/*
 #form-select-lang {
 	border: none;
 	border-radius: 12px;
@@ -38,6 +39,15 @@
 .form-select-lang:focus{
 	box-shadow: 0 0 0;
 }
+*/
+
+/*language field-start*/
+#select_lang_div{cursor: pointer;}
+.darkYellow-no-hover{background-color: #FFB82F;}
+.darkYellow-lang{background-color: #FFB82F;}
+.darkYellow-lang:hover{background-color: rgba(255,201,98,1.00);}
+/*language field-end*/
+
 
 #yellow{
 	background-color: #FFB82F ;
@@ -838,6 +848,10 @@ footer{
 .font-size24{font-size: 24px;}
 .font-size32{font-size: 32px;}
 .font-size40{font-size: 40px;}
+
+.list_style_type{list-style-type: none;}
+
+.no-shadow:focus{box-shadow: none;}
 
 .transform_img{transform: scaleX(-1);}
 

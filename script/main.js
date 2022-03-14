@@ -108,6 +108,23 @@
 				    $("#i-menu2").toggleClass("d-none");
 			});
 			
+			
+			
+			
+//			change language
+			let select_lang_div = $("#select_lang_div");
+			let langs_div = $("#langs_div");
+			$(select_lang_div).click(function(){
+				$(langs_div).toggleClass("d-none");
+			});
+			
+			$(select_lang_div).mouseover(function(){
+				$(langs_div).removeClass("d-none");
+			});
+			$(select_lang_div).mouseout(function(){
+				$(langs_div).addClass("d-none");
+			});
+			
 
 			
 		})
