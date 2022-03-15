@@ -1,17 +1,18 @@
 // JavaScript Document
 
+
 // select and crop profile picture
 var resize = $('#upload-demo').croppie({
 	enableExif: true,
 	enableOrientation: true,    
-	viewport: {  
-		width: 250,
-		height: 250,
+	viewport: { 
+		width: 150,
+		height: 150,
 		type: 'square' //square
 	},
 	boundary: {
-		width: 300,
-		height: 300
+		width: 200,
+		height: 200
 	}
 });
 
@@ -48,9 +49,6 @@ $('.btn-upload-image').on('click', function (ev) {
 
 
 
-
-
-
 //	copy website link to share 
 let share_btn = document.getElementById("share_btn");
 let copy_btn = document.getElementById("copy_link_btn");
@@ -66,5 +64,3 @@ copy_btn.onclick = function(){
 	window.getSelection().removeAllRanges();
 	copy_btn.innerText  = "copied";	
 };
-
-//---------------------------------------------------

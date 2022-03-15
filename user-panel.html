@@ -12,10 +12,14 @@
 
 <!-- jquery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	
-	
+		
 <!--swiper css cdn-->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+<!--croppie styles and scripts cdn (crop image)-->	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.js"></script>
 	
 <!-- styles -->
 <link href="style/css1.css" rel="stylesheet" type="text/css">
@@ -571,9 +575,57 @@
 				<div class="profile-box h-75 col-md-3 d-none d-md-flex flex-column align-items-center ps-0 pe-0 pt-5 pb-5">
 					<div class="position-relative mb-4 text-center">
 						<img class="rounded-circle" src="image/pf-pic.png" alt="profile picture" height="150px" width="150px">
-						<button class="btn position-absolute upload-pic p-0">
-							<img src="image/pf-pic-update.png" alt="new profile picture" height="45px" width="45px">
-						</button>
+						
+						<div class="position-absolute bottom-0 end-0">
+							<!-- Modal button-->
+							<button id="modal-btn" type="button" class="btn no-shadow p-0 m-0" data-bs-toggle="modal" data-bs-target="#pf_pic_Modal"> 
+								<img src="image/pf-pic-update.png" alt="new pf pic" height="45px" width="45px">
+							</button>
+						</div>
+
+						<!-- Modal for profile picture -->
+						<div class="modal fade" id="pf_pic_Modal" tabindex="-1" aria-labelledby="pf_pic_Modal" aria-hidden="true">
+						  <div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								
+							  <!--modal header-->
+							  <div class="modal-header d-flex justify-content-between">
+								  <h5 class="modal-title" id="pf_modal_label"> Select pic </h5>
+								  <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+							  </div>
+							
+							  <!--modal body-->
+							  <div class="modal-body">
+									<div class="container">
+										<div class="card">
+											<div class="card-body">
+												<div class="row">
+													<div class="col-md-8 text-center">
+														<div id="upload-demo"></div>
+													</div>
+													
+													<div class="col-md-4 d-flex flex-column">
+														<p class="fw-bold"> upload ur picture </p>
+														<input type="file" id="image" class="mt-3 mb-4">
+														<button class="btn btn-block btn-upload-image darkYellow">
+															crop img
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+							  	</div>
+								
+								<!--modal footer-->
+								<div class="modal-footer d-flex justify-content-start">
+									<button type="button" class="btn darkYellow">Save changes</button>
+								</div>
+							
+							 </div>
+						   </div>
+						 </div>
+						
 					</div>
 					<p class="gray-text m-0 mb-1"> fname and lname </p>
 					<p class="gray-text m-0 mb-1"> abc@gmail.com </p>
